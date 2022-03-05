@@ -128,7 +128,7 @@ header .main-nav .main-menu li {
 }
 
 header .main-nav .main-menu li a{
-    color: whitesmoke;
+    color: rgb(8, 6, 6);
     font-size: 1.8rem;
 }
 
@@ -170,7 +170,7 @@ header .main-nav .hamburger .bar {
     height: 3px;
     margin: 5px auto;
     transition: all 0.3s ease-in-out;
-     background-color: whitesmoke;
+     background-color: rgb(8, 6, 6);
 }
 
 @media screen and (max-width: 767px) {
@@ -274,7 +274,8 @@ main .about {
 }
 
 main .about h1 {
-    border-bottom: 2px solid #ccd6f6;
+    border-bottom: 2px solid rgb(8, 6, 6);
+    color: rgb(8, 6, 6);
 }
 
 main .about h1:before {
@@ -288,6 +289,7 @@ main .about .about-content {
 
 main .about .about-content p{
     font-size: 2rem;
+    color: rgb(8, 6, 6);
 }
 
 main .about .about-img {
@@ -414,6 +416,10 @@ main .about .about-img .image:hover {
 
 /*Technologies*/
 
+.technologies {
+    color: rgb(8, 6, 6);
+}
+
 .technologies-img img {
     margin-top: 50px;
     margin-right: 20px;
@@ -433,6 +439,254 @@ main .about .about-img .image:hover {
 }
 
 
+
+/*Projects*/
+
+main .projects {
+    background-color: #24527a;
+    padding: 50px 50px;
+}
+
+main .projects h1 {
+    border-bottom: 2px solid #ccd6f6;
+}
+
+main .projects h1:before {
+    content: "02";
+    color:#5dacbd;
+}
+
+main .hero {
+    height: 500px;
+    width: 100%;
+    position: relative;
+}
+
+main .slide-row {
+    display: flex;
+    width: 4000px;
+    transition: 0.5s;
+}
+
+main .slide-col {
+    width: 800px;
+    height: 400px;
+    position: relative;
+}
+
+main .project-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+}
+
+main .project-img img{
+    height: 100%;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+main .project-text {
+    background-color: rgba(43, 39, 39, 0.8);
+    width: 350px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 10px;
+    color:#ccd6f6;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+main .project-text p{
+    font-size: 2rem;
+    line-height: 24px;
+}
+
+main .project-text h3{
+    margin: 25px 0 5px;
+    color: #ccd6f6;
+}
+
+main .project-text h3 a{
+    font-size: 1.5rem;
+    color: #ccd6f6;
+}
+
+main .slider {
+    width: 800px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+}
+
+main .indicator {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -30px;
+}
+
+main .slider-btn {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    margin: 4px;
+    border-radius: 15px;
+    background: #fff;
+    cursor: pointer;
+}
+
+main .active{
+    width: 45px;
+}
+
+@media  screen and (max-width: 768px) {
+    main .slide-row {
+        width: 3000px;
+    }
+
+    main .slide-col {
+        width: 600px;
+        height: 300px;
+        position: relative;
+    }
+
+    main .slider {
+        width: 600px;
+        height: 300px;
+    }
+
+    main .project-text {
+        width: 270px;
+        height: 275px;
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    main .project-text p{
+        font-size: 1.6rem;
+        line-height: 24px;
+    }
+
+    main .project-text h3 a{
+        margin: 10px 0 5px;
+        color: #ccd6f6;
+    }
+
+    main .project-text h3 {
+        font-size: 1.5rem;
+    }
+
+}
+
+@media  screen and (max-width: 425px) {
+    main .projects {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    main .slide-row {
+        width: 1750px;
+    }
+
+    main .slide-col {
+        width: 350px;
+        height: 250px;
+        position: relative;
+    }
+
+    main .project-img img{
+        height: 70%;
+        border-radius: 10px;
+    }
+
+    main .slider {
+        width: 350px;
+        height: 250px;
+    }
+
+    main .project-text {
+        width: 170px;
+        height: 210px;
+        border-radius: 10px;
+        padding: 5px;
+    }
+
+    main .project-text p{
+        font-size: 1.2rem;
+        line-height: 15px;
+    }
+
+    main .project-text h3{
+        margin: 5px 0 5px;
+        color: #ccd6f6;
+    }
+
+    main .project-text h3 a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width:375px) {
+    main .projects h1 {
+        font-size: 4rem;
+    }
+
+    main .projects {
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    main .slide-row {
+        width: 1500px;
+    }
+
+    main .slide-col {
+        width: 300px;
+        height: 400px;
+        position: relative;
+    }
+
+    main .project-img img{
+        height: 50%;
+        border-radius: 10px;
+    }
+
+    main .slider {
+        width: 300px;
+        height: 300px;
+    }
+
+    main .project-text {
+        width: 170px;
+        height: 200px;
+        border-radius: 10px;
+        padding: 5px;
+        top: 200px;
+    }
+
+    main .project-text p{
+        font-size: 1.2rem;
+        line-height: 15px;
+    }
+
+    main .indicator {
+        width: 200px;
+    }
+
+
+}
+
 /*Contact*/
 main .contact {
     background-color: #5dacbd;
@@ -440,7 +694,8 @@ main .contact {
 }
 
 main .contact h1 {
-    border-bottom: 2px solid #ccd6f6;
+    border-bottom: 2px solid rgb(8, 6, 6);
+    color: rgb(8, 6, 6);
 }
 
 main .contact h1:before {
@@ -451,6 +706,7 @@ main .contact h1:before {
 main .contact .contact-content,
 main .contact .contact-img{
     padding-top: 50px;
+    color: rgb(8, 6, 6);
 }
 
 .contact-img a {
@@ -467,14 +723,7 @@ main .contact .contact-img{
 }
 
 @media screen and (max-width: 768px) {
-    .contact-img {
-        align-content: center;
-        justify-content: center;
-    }
-
-    main .contact h1 {
-        text-align: center;
-    }
+    
 }
 
 @media screen and (max-width:375px) {
@@ -484,6 +733,15 @@ main .contact .contact-img{
 }
 
 @media screen and (max-width: 768px) {
+    .contact-img {
+        align-content: center;
+        justify-content: center;
+    }
+
+    main .contact h1 {
+        text-align: center;
+    }
+
     main .contact .contact-content {
         flex: 0 0 100%;
         -webkit-flex: 0 0 100%;
@@ -511,6 +769,7 @@ main .contact .contact-img{
 
 main .form {
     background-color: #5dacbd;
+    color: rgb(8, 6, 6);
 }
 
 main .form h2 {
