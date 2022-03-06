@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Ubuntu+Mono:wght@400;700&display=swap');
 
+/*ThankYou page*/
+
+.thankYou {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: bold;
+    color: black;
+    justify-content: center;
+    align-self: center;
+}
 
 *{
     box-sizing: border-box;
