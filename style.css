@@ -383,6 +383,7 @@ main .about .about-img .image:hover {
 .to-top{
 	color:white;
 	padding-top:4rem;
+    padding-right: 1.5rem;
 	display:inline-block;/* or block */
 	position:relative;
 	border-color:white;
@@ -415,12 +416,19 @@ main .about .about-img .image:hover {
 @media screen and (max-width:425px) {
     .to-top {
         padding-top: 2rem;
+        border-color: rgba(255, 255, 255, 0.7);
+    }
+    .to-top:hover{
+        color:red;
+        border-color:red;
     }
     .to-top:before {
         width: 3.5rem;
         height: 3.5rem;
         font-size: 2rem;
+        color: rgba(255, 255, 255, 0.7);
     }
+
 }
 
 
