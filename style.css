@@ -480,6 +480,20 @@ main .hero {
     position: relative;
 }
 
+main .hero .arrow1 {
+    font-size: 9rem;
+    margin-top: 200px;
+    cursor: pointer;
+}
+
+main .hero #arrow2 {
+    position: absolute;
+    margin-top: 200px;
+    right: 0px;
+    font-size: 9rem;
+    cursor: pointer;
+}
+
 main .slide-row {
     display: flex;
     width: 4000px;
@@ -564,6 +578,13 @@ main .slider-btn {
 
 main .active{
     width: 45px;
+}
+
+@media  screen and (max-width: 1023px) {
+    main .hero .arrow1,
+    main .hero #arrow2 {
+        display: none;
+    }
 }
 
 @media  screen and (max-width: 768px) {
