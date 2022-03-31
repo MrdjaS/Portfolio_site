@@ -41,39 +41,6 @@ function topFunction() {
 
 const sliderBtn= document.getElementsByClassName("slider-btn");
 const slide = document.getElementById("slide");
-const arrowRight = document.getElementById("arrow2");
-const arrowLeft = document.getElementById("arrow1");
-
-
-let count = 0;
-
-arrowRight.addEventListener('click',() => {
-  if (count < 4) {
-    count++;
-  } else {
-    return count;
-  }
-  
-  for(let i = 0; i < 5; i++) {
-    sliderBtn[i].classList.remove("active")
-  }
-  sliderBtn[count].classList.add("active"); 
-  slide.style.transform = `translateX(-${count*20}%)`;
-})
-
-arrowLeft.addEventListener('click',() => {
-  if (count > 0) {
-    count--;
-  } else {
-    return count;
-  }
-  
-  for(let i = 0; i < 5; i++) {
-    sliderBtn[i].classList.remove("active")
-  }
-  sliderBtn[count].classList.add("active"); 
-  slide.style.transform = `translateX(-${count*20}%)`;
-})
 
 
 
@@ -83,7 +50,6 @@ sliderBtn[0].onclick = function() {
     sliderBtn[i].classList.remove("active")
   }
   this.classList.add("active");
-  return count = 0;
 }
 sliderBtn[1].onclick = function() {
   slide.style.transform = "translateX(-20%)";
@@ -91,7 +57,6 @@ sliderBtn[1].onclick = function() {
     sliderBtn[i].classList.remove("active")
   }
   this.classList.add("active");
-  return count = 1;
 }
 sliderBtn[2].onclick = function() {
   slide.style.transform = "translateX(-40%)";
@@ -99,7 +64,6 @@ sliderBtn[2].onclick = function() {
     sliderBtn[i].classList.remove("active")
   }
   this.classList.add("active");
-  return count = 2;
 }
 sliderBtn[3].onclick = function() {
   slide.style.transform = "translateX(-60%)";
@@ -107,7 +71,6 @@ sliderBtn[3].onclick = function() {
     sliderBtn[i].classList.remove("active")
   }
   this.classList.add("active");
-  return count = 3;
 }
 sliderBtn[4].onclick = function() {
   slide.style.transform = "translateX(-80%)";
@@ -115,5 +78,4 @@ sliderBtn[4].onclick = function() {
     sliderBtn[i].classList.remove("active")
   }
   this.classList.add("active");
-  return count = 4;
 }
