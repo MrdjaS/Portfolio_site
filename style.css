@@ -494,6 +494,37 @@ main .hero {
     position: relative;
 }
 
+main .projects .hero #arrow1 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    float: left;
+    box-shadow: -5px 5px 0 rgba(255,255,255,0.5);
+    transform: rotate(45deg);
+    top: 40%;
+}
+
+main .projects .hero #arrow1:hover {
+    box-shadow: -5px 5px 0 rgb(8, 6, 6);
+    cursor: pointer; 
+}
+
+main .projects .hero #arrow2 {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    float: left;
+    box-shadow: -5px 5px 0 rgba(255,255,255,0.5);
+    transform: rotate(225deg);
+    top: 40%;
+    right: 3%;
+}
+
+main .projects .hero #arrow2:hover {
+    box-shadow: -5px 5px 0 rgb(8, 6, 6);
+    cursor: pointer;
+}
+
 main .slide-row {
     display: flex;
     width: 4000px;
@@ -581,8 +612,8 @@ main .active{
 }
 
 @media  screen and (max-width: 1023px) {
-    main .hero .arrow1,
-    main .hero #arrow2 {
+    main .projects #arrow1,
+    main .projects #arrow2 {
         display: none;
     }
 }
