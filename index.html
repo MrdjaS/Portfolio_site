@@ -18,7 +18,8 @@
   </head>
   <body>
     <header id="top">
-      <div class="container" id="particles-js">
+      <div class="scroll-progress" id="scroll-progress"></div>
+      <div class="container">
         <nav class="main-nav d-flex justify-between align-items-center wrap">
           <a class="logo" href="#top">
             <img src="images/logo.png" alt=""/>
@@ -47,6 +48,7 @@
             <span class="bar"></span>
           </div>
         </nav>
+        <div id="particles-js"></div>
       </div>
     </header>
 
@@ -144,19 +146,18 @@
         </div>
         <div class="slider">
           <div class="slide-row" id="slide">
+            
             <div class="slide-col">
               <div class="project-text">
                 <p>
-                  Simple Javascript game called Chore door. 
-                  Your goal is to open all of the doors 
-                  without running into ChoreBot. Technologies 
-                  used for this game are: javascript, HTML, CSS.
+                  This quiz app was created using React and 
+                  styled with Material-UI components.
                 </p>
-                <h3><a href="https://github.com/MrdjaS/Chore_door_igra" target="_blank">Github link</a></h3>
+                <h3><a href="https://github.com/MrdjaS/Quiz" target="_blank">Github link</a></h3>
               </div>
               <div class="project-img">
-                <a href="https://github.com/MrdjaS/Chore_door_igra" target="_blank">
-                  <img src="images/chore_door_igra.PNG" alt="chore door igra image">
+                <a href="https://github.com/MrdjaS/Quiz" target="_blank">
+                  <img src="images/quiz.PNG" alt="quiz app image">
                 </a>
               </div>
             </div>
@@ -176,6 +177,23 @@
               <div class="project-img">
                 <a href="https://github.com/MrdjaS/Portfolio_site" target="_blank">
                   <img src="images/portfolio_site.PNG" alt="portfolio site image">
+                </a>
+              </div>
+            </div>
+
+            <div class="slide-col">
+              <div class="project-text">
+                <p>
+                  Simple Javascript game called Chore door. 
+                  Your goal is to open all of the doors 
+                  without running into ChoreBot. Technologies 
+                  used for this game are: javascript, HTML, CSS.
+                </p>
+                <h3><a href="https://github.com/MrdjaS/Chore_door_igra" target="_blank">Github link</a></h3>
+              </div>
+              <div class="project-img">
+                <a href="https://github.com/MrdjaS/Chore_door_igra" target="_blank">
+                  <img src="images/chore_door_igra.PNG" alt="chore door igra image">
                 </a>
               </div>
             </div>
@@ -211,20 +229,6 @@
               </div>
             </div>
   
-            <div class="slide-col">
-              <div class="project-text">
-                <p>
-                  This quiz app was created using React and 
-                  styled with Material-UI components.
-                </p>
-                <h3><a href="https://github.com/MrdjaS/Quiz" target="_blank">Github link</a></h3>
-              </div>
-              <div class="project-img">
-                <a href="https://github.com/MrdjaS/Quiz" target="_blank">
-                  <img src="images/quiz.PNG" alt="quiz app image">
-                </a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -269,10 +273,7 @@
               <div class="form-group">
                 <input class="form-element" type="email" name="email" value="" placeholder="Your Email" required>
               </div>
-              <div class="form-group">
-                <textarea name="message" class="form-element" placeholder="Your Message" rows="4" required>
-                </textarea>
-              </div>
+              <div class="form-group"><textarea name="message" class="form-element" placeholder="Your Message" rows="3" required></textarea></div>
               <div class="form-group d-flex justify-end">
                 <button class="link-button" type="submit" value="yes" name="send">
                    submit
